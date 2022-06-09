@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Smart Explorer Enterprise</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -32,7 +36,7 @@
 
                     <li class="nav_item">
                         <a href="#about" class="nav_link active-link">
-                            <i class="uil uil-user nav_icon"></i> About
+                            <i class="uil uil-user nav_icon"></i> Why Us
                         </a>
 
                     <li class="nav_item">
@@ -41,13 +45,8 @@
                         </a>
 
                     <li class="nav_item">
-                        <a href="#products" class="nav_link">
-                            <i class="uil uil-book-alt nav_icon"></i> Products
-                        </a>
-
-                    <li class="nav_item">
-                        <a href="#testimonial" class="nav_link">
-                            <i class="uil uil-mountains-sun nav_icon"></i> Testimonial
+                        <a href="#donation" class="nav_link">
+                            <i class="uil uil-mountains-sun nav_icon"></i> Donation Program
                         </a>
 
                     <li class="nav_item">
@@ -76,21 +75,25 @@
             <div class="home_container container grid">
                 <div class="home_content grid">
                     <div class="home_social">
-                        <a href="https://www.linkedin.com/in/sohqianyi/" target="_blank" class="home_social-icon">
+                        <!-- <a href="https://www.linkedin.com/in/sohqianyi/" target="_blank" class="home_social-icon">
                             <i class="uil uil-linkedin"></i>
                         </a>
                         <a href="https://github.com/qysoh" class="home_social-icon">
                             <i class="uil uil-github"></i>
-                        </a>
+                        </a> -->
                     </div>
 
                     <div class="home_img">
-
+                        <img src="assets/img/ewaste-banner.png" alt="">
                     </div>
+
                     <div class="home_data">
                         <h1 class="home_title">Smart Explorer Enterprise</h1>
-                        <h3 class="home_subtitle">Est. 2004</h3>
-                        <p class="home_description">Based in Singapore.</p>
+                        <h3 class="home_subtitle">Always striving to reduce wastage caused by e-waste</h3>
+                        <p class="home_description">We are an official e-Waste recycler based in Singapore established
+                            in 2004, licensed by NEA.<br> We provide free transport and labour to collect your e-wastes.
+                            Terms and conditions apply.
+                        </p>
                         <a href="#contact" class="button button--flex">
                             Contact Us
                             <i class="uil uil-message button_icon"></i>
@@ -98,20 +101,81 @@
                     </div>
                 </div>
 
+                <div class="home_detail_header">
+                    <h2 class="home_column_title">Giving Old IT Equipment a New Lease of Life</h2>
+                    <h2 class="home_column_title">Recycle and Disposal of IT Equipment</h2>
+                </div>
+
+                <div>
+                    <div class="home_grid_container">
+                        <div class="home_column_left">
+                            <h3 class="home_column_subtitle">Before</h3>
+                            <h3 class="home_column_subtitle">After</h3>
+                        </div>
+                        <div class="home_column_grid left">
+                            <img class="item1" src="assets/img/before.JPG" alt="before">
+                            <img class="item2" src="assets/img/after.JPG" alt="after">
+                            <div id="slides" class="slide_container">
+                                <div class="mySlides fade">
+                                    <img src="assets/img/indo.JPG" style="width:100%">
+                                    <div class="text">Donation Program</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="assets/img/ewaste-banner.png" style="width:100%">
+                                    <div class="text">Caption Two</div>
+                                </div>
+
+                                <!-- <div class="mySlides fade">
+                                        <img src="assets/img/new.JPG" style="width:100%">
+                                        <div class="text">Caption Three</div>
+                                    </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home_grid_container">
+                        <div class="home_column_left">
+                            <h3 class="home_column_subtitle">Convert Waste Into Metals & Energy</h3>
+                        </div>
+                        <div class="home_column_grid right">
+                            <img class="item1" src="assets/img/old.JPG" alt="old">
+                            <img class="item2" src="assets/img/recycle.JPG" alt="recycle">
+                            <img class="item3" src="assets/img/recycle1.jpg" alt="recycle">
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
             </div>
         </section>
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
-            <h2 class="section_title">About Us</h2>
+            <h2 class="section_title">Why Us?</h2>
             <br>
             <div class="about_container container grid">
                 <img src="assets/img/Ewaste.png" alt="" class="about_img">
                 <div class="about_data">
                     <p class="about_description">
-                        Smart Explorer Enterprise, based in Singapore, was set up in 2004. We have an e-waste licence
-                        issued by NEA (National Environment Agency). We collect electronic wastes all around Singapore
-                        with the aim to convert as much of these wastes into reusable items.
+                    <div>
+                        - We have the technical expertise of turning e-waste into useful refurbished products, with more
+                        than 15 years of experience. Refer to <a href="#donation"
+                            style="color: olivedrab;">Recycled/Refurbished Results</a>.
+                    </div>
+                    <br>
+                    <div>
+                        - We strive for sustainability and minimizing environmental contamination
+                    </div>
+                    <br>
+                    <div>
+                        - We focus on converting e-waste into reusable products
+                    </div>
                     </p>
                     <!-- <div class="about_info">
                             <div>
@@ -166,7 +230,8 @@
                             <div>
                                 <h1 class="mission_title">Save the Environment</h1>
                                 <span class="mission_subtitle">A little effort goes a long way. We aim to help save the
-                                    world environment with our efforts, by raising awareness of the importance of recycling, and creating a better
+                                    world environment with our efforts, by raising awareness of the importance of
+                                    recycling, and creating a better
                                     environment for future generations to come.
                                 </span>
                             </div>
@@ -182,7 +247,8 @@
                                 <h1 class="mission_title">Affordable</h1>
                                 <span class="mission_subtitle">We aim to benefit people unable to afford new
                                     electronic products by refurbishing, upgrading and selling
-                                    recycled products at an affordable price.
+                                    recycled products at an affordable price. Refer to our <a href="#donation"
+                                        style="color: olivedrab;">Donation Program</a>.
                                 </span>
                             </div>
                         </div>
@@ -192,125 +258,49 @@
             </div>
         </section>
 
-        <!--==================== PROJECTS ====================-->
-        <section class="project section" id="projects">
-            <h2 class="section_title">Projects</h2>
+
+        <!--==================== DONATION ====================-->
+        <section class="donation section" id="donation">
+            <h2 class="section_title">Donation Program</h2>
             <br>
 
-            <div class="project_container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- qmepls -->
-                    <div class="project_content grid swiper-slide">
-                        <!-- <div class="project_content_qmepls"> -->
-                        <img src="assets/img/qmepls.png" alt="" class="project_img">
+            <div class="donation_container container">
+                <div class="card_row">
 
-                        <div class="project_data">
-                            <h3 class="project_title">QMePls</h3>
-                            <p class="project_description">
-                                - End-to-end Clinic Booking application<br>
-                                - Check waiting times at nearby clinics<br>
-                                - Book queue slots<br>
-                                - Input relevant symptoms as a log to ease consultation
-                                with doctors<br>
-                                - Developed with Java on Android Studio
-                            </p>
-                            <a href="https://github.com/thesneakerhead/QMePls" target="_blank"
-                                class="button button--flex project_button">
-                                View Project
-                                <i class="uil uil-github-alt button_icon"></i>
-                            </a>
-                        </div>
-                        <!-- </div> -->
+                    <div class="donation_data card_column">
+                        <h2 class="donation_title">Hear from our Donors</h2>
+                        <p class="donation_description">We are grateful to all donors for donating to needy individuals
+                            with
+                            our refurbished products. Special thanks to these donors. </p>
                     </div>
-
-                    <div class="project_content grid swiper-slide">
-                        <!-- <div class="project_content_qmepls"> -->
-                        <iframe class="project_img" src="https://www.youtube.com/embed/caVfsUpyoqA"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-
-                        <div class="project_data">
-                            <h3 class="project_title">Multidisciplinary Project</h3>
-                            <p class="project_description">
-                                - Raspberry Pi<br>
-                                - Image Recognition with EfficientDet Lite Model<br>
-                                - Multithreading with Bluetooth and Wifi Connections<br>
+                    <div class="card card_column">
+                        <img src="assets/img/indo.JPG" class="card_img">
+                        <div class="card_container">
+                            <h4><b>Mr Sukhaimi</b></h4>
+                            <p>Donor Mr Sukhaimi bought refurbished computers and donated to an orphanage in Indonesia
                             </p>
-                            <a href="https://www.youtube.com/embed/caVfsUpyoqA" target="_blank"
-                                class="button button--flex project_button">
-                                View Project
-                                <i class="uil uil-play button_icon"></i>
-                            </a>
-                        </div>
-                        <!-- </div> -->
-                    </div>
-
-                    <!-- mozzyshield -->
-                    <div class="project_content grid swiper-slide">
-                        <img src="assets/img/mozzyshield.png" alt="" class="project_img">
-
-                        <div class="project_data">
-                            <h3 class="project_title">MozzyShield</h3>
-                            <p class="project_description">
-                                - Live Dengue Cluster Monitoring application<br>
-                                - Includes a symptom checker<br>
-                                - Recommends nearby clinics to users<br>
-                                - Developed with Java on Android Studio<br>
-                            </p>
-                            <a href="https://github.com/zetachua/Dengue-Tracker-Android-Studios-Application"
-                                target="_blank" class="button button--flex project_button">
-                                View Project
-                                <i class="uil uil-github-alt button_icon"></i>
-                            </a>
                         </div>
                     </div>
-
-                    <!-- pixelrun -->
-                    <div class="project_content grid swiper-slide">
-                        <!-- <div class="project_content_pr"> -->
-
-                        <img src="assets/img/pixelrun.png" alt="" class="project_img">
-
-                        <div class="project_data">
-                            <h3 class="project_title">Pixel Run</h3>
-                            <div class="project_description">
-                                - Online Strategy Game that facilitates the learning and
-                                solidification of Computer Science concepts <br>
-                                - Developed with Unity
-                            </div>
-                            <!-- <a href="https://github.com/zetachua/Dengue-Tracker-Android-Studios-Application" target="_blank" class="button button--flex project_button">
-                                        View Project 
-                                        <i class="uil uil-github-alt button_icon"></i>
-                                    </a> -->
+                    <div class="card card_column">
+                        <img src="assets/img/new.JPG" class="card_img">
+                        <div class="card_container">
+                            <h4><b>Ms Nurul Syafikah</b></h4>
+                            <p>Donor Ms Nurul Syafikah donated 30 laptops a school in Singapore</p>
                         </div>
-                        <!-- </div> -->
                     </div>
                 </div>
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-project-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-project-icon"></i>
 
+                <!-- <div class="donation_img">
+                    <img src="assets/img/indo.JPG" width="40%" style="border-radius: 10px;">
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="donation_text">
+                    ladfjalkdjflakjdlfkajkldf
+                </div> -->
             </div>
 
 
-        </section>
-
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
 
         </section>
-
-
-        <!--==================== TESTIMONIAL ====================-->
-        <!-- <section class="testimonial section">
-                
-
-            </section> -->
 
         <!--==================== CONTACT US ====================-->
         <section class="contact section" id="contact">
@@ -333,8 +323,8 @@
                     <div>
                         <h3 class="contact_title">Address</h3>
                         <span class="contact_subtitle">
-                            Harvest @ Woodlands<br>
                             280 Woodlands Industrial Park E5<br>
+                            Harvest @ Woodlands<br>
                             #05-44<br>
                             Singapore 757322
                         </span>
@@ -396,13 +386,10 @@
 
                 <ul class="footer_links">
                     <li>
-                        <a href="#about" class="footer_link">About</a>
+                        <a href="#about" class="footer_link">Why Us</a>
                     </li>
                     <li>
-                        <a href="#mission" class="footer_link">mission</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="footer_link">Projects</a>
+                        <a href="#mission" class="footer_link">Our Mission</a>
                     </li>
                     <li>
                         <a href="#contact" class="footer_link">Contact</a>
