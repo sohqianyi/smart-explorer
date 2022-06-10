@@ -180,6 +180,7 @@ img {
 .grid {
     display: grid;
     gap: 1.5rem;
+    padding: 10px;
 }
 
 .header {
@@ -729,8 +730,6 @@ button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     height: 20%;
-    display: table-cell;
-
 }
 
 .card_img {
@@ -748,12 +747,12 @@ button {
 .card_container {
     padding: 26px;
     text-align: center;
-    height: 160px;
-
+    /* height: 160px; */
 }
 
 .card_row {
     margin: 0 -5px;
+    text-align: center;
 }
 
 .card_row:after {
@@ -763,8 +762,8 @@ button {
 }
 
 .card_column {
-    float: left;
-    width: 30%;
+    display: inline-block;
+    width: 40%;
     padding: 10px;
     margin: 10px;
 }
@@ -778,10 +777,7 @@ button {
 }
 
 .donation_data {
-    /* grid-column: 1/3; */
-    width: 20%;
-    padding: 26px;
-    vertical-align: middle;
+    text-align: center;
 }
 
 .donation_title {
