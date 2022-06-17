@@ -243,6 +243,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
@@ -340,8 +341,7 @@ img {
 .home_column_title {
     font-size: var(--h1-font-size);
     text-align: center;
-    width: 50%;
-    float: left;
+    grid-area: header;
 }
 
 .home_column_subtitle {
@@ -351,20 +351,28 @@ img {
     margin-bottom: var(--mb-0-75);
     text-align: center;
     flex-grow: 1;
+    grid-area: sub;
+}
+
+.home_column_subtitle_before_after {
+    display: flex;
 }
 
 .home_grid_container {
-    width: 50%;
-    float: left;
+    display: flex;
+    flex-direction: row;
 }
 
 .home_column_grid.left {
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
+    flex: 50%;
 }
 
 .home_column_grid.right {
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
+    flex: 50%;
 }
+
 
 .item1 {
     grid-area: old;
@@ -389,7 +397,6 @@ img {
     grid-area: new;
     height: 100%;
     object-fit: cover;
-
 }
 
 .item3 {
@@ -404,7 +411,7 @@ img {
 .home_column_grid>img {
     object-fit: cover;
     width: 100%;
-    max-height: 350px;
+    height: 350px;
 }
 
 .slide_container {
@@ -414,7 +421,7 @@ img {
 
 .home_column_grid {
     display: grid;
-    grid-template-areas: 'old old new new''other other other other';
+    grid-template-areas: 'header header header header''sub sub sub sub''old old new new''other other other other';
     gap: 1rem;
 }
 
@@ -718,12 +725,6 @@ button {
 /* Active Modal */
 
 
-/*==================== PORTFOLIO ====================*/
-
-
-/*==================== PROJECT IN MIND ====================*/
-
-
 /*==================== DONATION ====================*/
 
 .card {
@@ -752,6 +753,8 @@ button {
 
 .card_row {
     margin: 0 -5px;
+    display: flex;
+    flex-direction: row;
     text-align: center;
 }
 
@@ -762,8 +765,8 @@ button {
 }
 
 .card_column {
-    display: inline-block;
-    width: 40%;
+    /* display: inline-block; */
+    flex: 40%;
     padding: 10px;
     margin: 10px;
 }
@@ -950,7 +953,7 @@ button {
 
 /* For small devices */
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 480px) {
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -970,6 +973,32 @@ button {
 
     .mission_title {
         font-size: var(--normal-font-size);
+    }
+
+    .home_grid_container {
+        flex-direction: column;
+    }
+
+    .card_row {
+        flex-direction: column;
+    }
+
+    .home_column_grid.left {
+        margin-bottom: 1.5rem;
+        flex: 50%;
+    }
+
+    .home_column_grid.right {
+        margin-top: 1.5rem;
+        flex: 50%;
+    }
+
+    .card_img {
+        height: 200px;
+    }
+
+    .home_column_grid>img {
+        height: 200px;
     }
 }
 
@@ -997,9 +1026,26 @@ button {
     .footer_container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* .home_grid_container {
+        flex-direction: column;
+    } */
+
+    .home_column_grid.left {
+        margin-right: 1.5rem;
+        flex: 50%;
+    }
+
+    .home_column_grid.right {
+        margin-left: 1.5rem;
+        flex: 50%;
+    }
+
+
 }
 
 @media screen and (min-width: 768px) {
+
     .container {
         margin-left: auto;
         margin-right: auto;
@@ -1118,41 +1164,59 @@ button {
         justify-self: flex-end;
     }
 
-    /* For large devices */
-    @media screen and (min-width: 1024px) {
-        .container {
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .home_grid_container {
+        flex-direction: column;
+    }
 
-        .header,
-        .main,
-        .footer_container {
-            padding: 0 1rem;
-        }
+    /* .home_column_grid.left {
+        margin-bottom: 1.5rem;
+        flex: 50%;
+    }
 
-        .project_content {
-            column-gap: 5rem;
-        }
+    .home_column_grid.right {
+        margin-top: 1.5rem;
+        flex: 50%;
+    } */
+}
 
-        .swiper-project-icon {
-            font-size: 3.5rem;
-        }
+/* For large devices */
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        .swiper-button-prev {
-            left: -3.5rem;
-        }
+    .header,
+    .main,
+    .footer_container {
+        padding: 0 1rem;
+    }
 
-        .swiper-button-next {
-            right: -3.5rem;
-        }
+    .project_content {
+        column-gap: 5rem;
+    }
 
-        .contact_form {
-            width: 460px;
-        }
+    .swiper-project-icon {
+        font-size: 3.5rem;
+    }
 
-        .contact_inputs {
-            grid-template-columns: repeat (2, 1fr);
-        }
+    .swiper-button-prev {
+        left: -3.5rem;
+    }
+
+    .swiper-button-next {
+        right: -3.5rem;
+    }
+
+    .contact_form {
+        width: 460px;
+    }
+
+    .contact_inputs {
+        grid-template-columns: repeat (2, 1fr);
+    }
+
+    .home_grid_container {
+        flex-direction: row;
     }
 }
