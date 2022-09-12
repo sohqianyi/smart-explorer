@@ -1081,3 +1081,9 @@ button {
         width: 100%;
     }
 }
+/* For xlarge devices */
+@media screen and (min-width: 1472px) {
+        .home_column_images>img {
+            height: 800px;
+        }
+    }
