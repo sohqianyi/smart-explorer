@@ -98,20 +98,20 @@
 
                 <div class="home_grid_container">
 
-                    <div class="home_column_grid left">
-                        <h2 class="home_column_title">Giving Old IT Equipment a New Lease of Life</h2>
-                        <h3 class="home_column_subtitle">
-                            <div class="home_column_subtitle_before_after">
-                                <h3 class="home_column_subtitle">Before</h3>
-                                <h3 class="home_column_subtitle">After</h3>
-                            </div>
-
-                        </h3>
-
-                        <img class="item1" src="assets/img/before.JPG" alt="before">
-                        <img class="item2" src="assets/img/after.JPG" alt="after">
-                        <img class="item3" src="assets/img/indo.JPG" alt="donation">
-
+                    <div class="home_column_grid">
+                        <div class="home_column_info">
+                            <h2 class="home_column_title">Giving Old IT Equipment a New Lease of Life</h2>
+                                <div class="home_column_subtitle_before_after">
+                                    <h3 class="home_column_subtitle">Before</h3>
+                                    <h3 class="home_column_subtitle">After</h3>
+                                </div>
+                        </div>
+                        <div class="home_column_images">
+                            <img class="item1" src="assets/img/before.JPG" alt="before">
+                            <img class="item2" src="assets/img/after.JPG" alt="after">
+                            <img class="item3" src="assets/img/indo.JPG" alt="donation">
+                        </div>
+                        
                         <!-- <div id="slides" class="slide_container">
                             <div class="mySlides fade">
                                 <img src="assets/img/indo.JPG" style="width:100%">
@@ -125,16 +125,19 @@
 
                         </div> -->
                     </div>
-                    <div class="home_column_grid right">
-                        <h2 class="home_column_title">Recycle and Disposal of IT Equipment</h2>
-                        <h3 class="home_column_subtitle">Convert Waste Into Metals & Energy</h3>
 
-                        <img class="item1" src="assets/img/old.JPG" alt="old">
-                        <img class="item2" src="assets/img/recycle.JPG" alt="recycle">
-                        <img class="item3" src="assets/img/recycle1.jpg" alt="recycle">
-
-
-                    </div>
+                    <div class="home_column_grid">
+                        <div class="home_column_info">
+                            <h2 class="home_column_title">Recycle and Disposal of IT Equipment</h2>
+                            <h3 class="home_column_subtitle">
+                                Convert Waste Into Metals & Energy
+                            </h3>
+                        </div>
+                        <div class="home_column_images">
+                            <img class="item1" src="assets/img/old.JPG" alt="old">
+                            <img class="item2" src="assets/img/recycle.JPG" alt="recycle">
+                            <img class="item3" src="assets/img/recycle1.jpg" alt="recycle">
+                        </div>
                 </div>
             </div>
 
@@ -264,11 +267,12 @@
         <!--==================== CONTACT US ====================-->
         <section class="contact section" id="contact">
             <h2 class="section_title">Contact Us!</h2>
+            <br>
+            <div class="contact_container container">
             <h3 class="section_subtitle">We provide free transport and labour to collect your e-wastes. Terms and
                 conditions apply.</h3>
 
-            <br>
-            <div class="contact_container container grid">
+                <div class="contacts">
                 <div class="contact_info">
                     <i class="uil uil-envelope contact_icon"></i>
                     <div>
@@ -298,9 +302,11 @@
                     </div>
                 </div>
 
+                </div>
+                <div class="contact_form_container">
                 <form target="_blank" action="https://formsubmit.co/00aea1fb2b0f4f801c99465ee202351a" method="POST"
-                    class="contact_form grid" id="submit_form">
-                    <div class="contact_inputs grid">
+                    class="contact_form" id="submit_form">
+                    <div class="contact_inputs">
                         <div class="contact_content">
                             <label for="" class="contact_label">Name</label>
                             <input type="text" name="name" class="contact_input" required>
@@ -327,6 +333,8 @@
 
                     </div>
                 </form>
+                                </div>
+
             </div>
         </section>
     </main>
